@@ -1,0 +1,242 @@
+\documentclass[10pt,a4paper]{altacv}
+\geometry{left=1cm,right=1cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\newcommand{\custominfo}[4] {
+    \includegraphics[scale=#2]{#1} 
+    \hspace{#3} 
+    #4
+    \hspace{5mm}}
+
+\newcommand{\codeforces}[1] {
+    \custominfo{codeforces.png}{0.05}{0.6mm}{#1}}
+    
+\newcommand{\hackerrank}[1] {
+    \custominfo{hackerrank.png}{0.018}{0.2mm}{#1}}
+
+\begin{document}
+
+
+
+\name{Dauren Abdykaparov}
+\tagline{} % moto
+\personalinfo{
+    % \printinfo{symbol}{detail}
+    % \mailaddress{}
+    % \homepage{}
+    % \twitter{}
+    % \orcid{}
+    \href{mailto:daurenabd@gmail.com}{\email{daurenabd@gmail.com}}
+    \href{tel:821073508907}{\phone{+8210-7350-8907}}
+    \newline
+    \href{https://linkedin.com/in/daurenabd}
+         {\linkedin{linkedin.com/in/daurenabd}}
+    \href{https://github.com/daurenabd}
+         {\github{github.com/daurenabd}}
+    \href{https://codeforces.com/profile/YoungCoder}
+         {\codeforces{codeforces.com/profile/YoungCoder}}
+    \href{https://hackerrank.com/daurenabd}
+         {\hackerrank{hackerrank.com/daurenabd}}
+}
+    %\href{mailto:daurenabd@gmail.com}{\email{daurenabd@gmail.com}}
+    %\href{tel:821073508907}{\phone{+8210-7350-8907}}
+    %\newline
+    %\href{https://github.com/daurenabd}{\github{github.com/daurenabd}}
+    %\href{https://codeforces.com/profile/YoungCoder}{\codeforces{codeforces.com/profile/YoungCoder}} 
+    %\href{https://hackerrank.com/daurenabd}{\hackerrank{hackerrank.com/daurenabd}}}
+    
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+
+
+\cvsection{Education}
+
+\cveventeducation
+    {B.S. in Physics and Computer Science at }
+    {\textbf{Ulsan National Institute of Science and Technology (UNIST)}}
+    {Sept. 2014 - Aug. 2019}
+    {\href{https://www.unist.ac.kr/about-unist/}{\textbf{https://www.unist.ac.kr/about-unist/}}
+    \begin{itemize}
+        \item {UNIST Global Dream Scholarship: free tuition + 300\$ monthly allowance}
+        \item {3.96/4.3 GPA in Computer Science}
+    \end{itemize}}
+
+\cvsection{Experience}
+
+\cveventflat
+    {Software Engineer at }
+    {\textbf{Bereke}, South Korea}
+    {July 2018 -- present}
+    {South Korea}
+\medskip
+\normalsize
+\begin{itemize}
+\item Building real-time game show trivia application supported by \$4000 Unicorn Scholarship
+\item Developing scalable back-end infrastructure for live-streaming
+\textbf{[Node.js, React, Redis, Firebase, AWS]}
+\end{itemize}
+
+\medskip
+
+\cveventflat
+    {Software Engineer at }
+    {\textbf{FinApps}, Almaty, Kazakhstan}
+    {Aug. 2017 -- Feb. 2018}
+    {Almaty, Kazakhstan}
+\smallskip
+\newline
+\href{https://torgai.com/}{\textbf{https://torgai.com/}}
+\begin{itemize}
+\item Developed point-of-sale software based on Android
+    \textbf{[Kotlin, Java, SQL, Firebase, Android]}
+\item Created face recognition system for binding customers to their checks 
+    \textbf{[Python, Java, JAX-RS, SQL]}
+\item Introduced and automated UI tests 
+    \textbf{[Java, Kotlin, Espresso, Android]}
+\item Optimized database full-text search for below 100ms latency 
+    \textbf{[SQL, SQLite, Android]}
+\end{itemize}
+
+\medskip
+
+\cveventflat
+    {Researcher at}
+    {\textbf{Pohang Accelerator Laboratory}, POSTECH}
+    {Dec. 2016 -- Feb. 2017}
+    {POSTECH, Pohang, South Korea}
+\medskip
+\begin{itemize}
+\item Participated in calibration of a beam-line and improvement of the controlling software 
+    \textbf{[Matlab]}
+\end{itemize}
+\medskip
+\cveventflat
+    {Researcher at}
+    {\textbf{High Pressure X-ray Crystallography Lab}, UNIST}
+    {Mar. 2015 --  Feb. 2017}
+    {UNIST, Ulsan, South Korea}
+\medskip
+\begin{itemize}
+\item Grew, refined, and visualized protein crystals
+    \textbf{[Python]}
+\end{itemize}
+
+\medskip
+
+\cveventflat
+    {Teaching Assistant for }
+    {\textbf{Engineering Programming II course}, UNIST}
+    {Mar. 2015 -- June 2015}
+    {UNIST, Ulsan, South Korea}
+\medskip
+\begin{itemize}
+\item Taught students how to work with Lego Mindstorms EV3 
+    \textbf{[RobotC, C, C++]}
+\end{itemize}
+
+\cvsection{Projects}
+
+\cveventflat
+    {\textbf{UlsanBusBot}, }
+    {{\url{https://github.com/DaurenAbd/ulsanBusBot}}}
+    {September 2018 -- present}{}
+\medskip
+\begin{itemize}
+\item Telegram chat-bot for Ulsan city busway
+    \textbf{[Node.js, SQL, TelegramAPI]}
+\item Extend official application by new features such as:
+    \textit{closest bus-stop, bus tracking, popular routes, and etc}
+\end{itemize}
+\medskip
+
+\cveventflat
+    {\textbf{Unshaky}, }
+    {{\url{https://github.com/DaurenAbd/Unshaky}}}
+    {March 2018 -- June 2018}{}
+\medskip
+\begin{itemize}
+\item Developed a Book reader with screen stabilization feature to read while walking or in a bus
+    \textbf{[Android, Kotlin]}
+\item Stabilization is achieved using accelerometer and gyroscope sensors
+\end{itemize}
+\medskip
+
+\cveventflat
+    {\textbf{Tiny Chat}, }
+    {{\url{https://github.com/DaurenAbd/tiny-server}}}
+    {March 2018 -- June 2018}{}
+\medskip
+\begin{itemize}
+\item Console socket-based chat with rooms and delayed messaging support 
+    \textbf{[C++]}
+\end{itemize}
+\medskip
+
+\cveventflat
+    {\textbf{Postal.kz}, }
+    {{\url{https://github.com/DaurenAbd/postal-kz}}}
+    {June 2012 -- February 2013}{}
+\medskip
+\begin{itemize}
+\item Web-site for creating and sharing online postcards 
+    \textbf{[PHP, Ajax]}
+\item Honorable mention on 
+    \textit{Kazakhstan National Project Competition in Informatics}
+\end{itemize}
+
+\cvsection{Awards}
+\parbox{0.5\textwidth}{
+\cvachievement
+    {}
+    {ACM-ICPC South Korea First Round}
+    {2018, 2016, 2015, 2014}
+\cvachievement
+    {\faTrophy}
+    {Asia-Pacific Informatics Olympiad}
+    {2014 (\textbf{bronze}), 2013}
+\cvachievement
+    {\faTrophy}
+    {All-Russian Team Olympiad in Informatics}
+    {2013 (\textbf{bronze}), 2011}}
+\parbox{0.45\textwidth}{
+\cvachievement
+    {\faTrophy}
+    {Eurasian Informatics Olympiad}
+    {2013 (\textbf{silver}), 2011 (\textbf{bronze})}
+\cvachievement
+    {}
+    {Kazakhstan IOI reserves member}
+    {2014, 2013, 2012}
+\cvachievement
+    {\faTrophy}
+    {Kazakhstan National Informatics Olympiad}
+    {2014 (\textbf{silver}), 2013 (\textbf{silver}), 2012 (\textbf{silver})}}
+
+\clearpage
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
