@@ -6,13 +6,11 @@
 \usepackage[default]{lato}
 
 \definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
-
 \usepackage[colorlinks = true,
     linkcolor = blue(pigment),
     urlcolor  = blue(pigment),
     citecolor = blue(pigment),
     anchorcolor = blue(pigment)]{hyperref}
-
 
 \definecolor{VividPurple}{HTML}{000000}
 \definecolor{SlateGrey}{HTML}{242424}
@@ -26,55 +24,9 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-\newcommand{\custominfo}[4] {
-    \includegraphics[scale=#2]{#1}
-    \hspace{#3}
-    #4
-    \hspace{5mm}}
-
-\newcommand{\codeforces}[1] {
-    \custominfo{codeforces.png}{0.05}{0.6mm}{#1}}
-
-\newcommand{\hackerrank}[1] {
-    \custominfo{hackerrank.png}{0.018}{0.2mm}{#1}}
-
-\newcommand{\leetcode}[1] {
-    \custominfo{leetcode.png}{0.028}{0mm}{#1}}
-
 \begin{document}
 
-
-
-    \name{Dauren Abdykaparov}
-    \tagline{} % moto
-    \personalinfo{
-    % \printinfo{symbol}{detail}
-    % \mailaddress{}
-    % \homepage{}
-    % \twitter{}
-    % \orcid{}
-        \large
-        \href{mailto:daurenabd@gmail.com}{\email{daurenabd@gmail.com}}
-        \href{tel:821073508907}{\phone{+8210-9720-9607}}
-        \href{https://linkedin.com/in/daurenabd}
-        {\linkedin{linkedin.com/in/daurenabd}}
-        \newline
-        \large
-        \href{https://github.com/daurenabd}
-        {\github{github.com/daurenabd}}
-        \href{https://leetcode.com/daurenabd/}
-        {\leetcode{leetcode.com/daurenabd}}
-    }
-    %\href{mailto:daurenabd@gmail.com}{\email{daurenabd@gmail.com}}
-    %\href{tel:821073508907}{\phone{+8210-7350-8907}}
-    %\newline
-    %\href{https://github.com/daurenabd}{\github{github.com/daurenabd}}
-    %\href{https://codeforces.com/profile/YoungCoder}{\codeforces{codeforces.com/profile/YoungCoder}}
-    %\href{https://hackerrank.com/daurenabd}{\hackerrank{hackerrank.com/daurenabd}}}
-
-    \begin{fullwidth}
-        \makecvheader
-    \end{fullwidth}
+    \input{header}
 
     \large
     \cvsection{Experience}
