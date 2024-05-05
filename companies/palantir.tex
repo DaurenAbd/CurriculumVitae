@@ -5,3 +5,58 @@
 {London, United Kingdom}
 \newline
 \href{https://www.palantir.com/}{\textbf{www.palantir.com}}
+\begin{itemize}
+    \item {
+        Introduced
+        \href{https://www.palantir.com/docs/foundry/administration/container-governance/}{automatic vulnerability scaning and security controls}
+        for user-uploaded Docker containers in Foundry, allowing users to recall them based on found exposures.
+        This greenlighted
+        \href{https://www.palantir.com/docs/foundry/transforms-python/container-overview/}{a workflow}
+        allowing users to use Docker containers as a part of their data pipeline.
+    }
+    \textbf{[Java, Docker, Trivy]}
+    \item {
+        Contributed to
+        \href{https://www.palantir.com/docs/foundry/code-repositories/aip-features/#ai-error-enhancer}{AI Error Enhancer},
+        a tool that provides comprehensive error explanations and suggested code changes in multiple apps across Foundry.
+    }
+    \textbf{(TODO: add info about patent)}
+    \item {
+        Implemented
+        \href{https://www.palantir.com/docs/foundry/code-repositories/aip-features/#code-autocomplete}{a tool similar to GitHub Copilot},
+        which provides users with LLM-generated code completions including support for Foundry-specific code.
+    }
+    \item {
+        Created
+        \href{https://www.palantir.com/docs/foundry/transforms-common/local-preview/}{a Gradle plugin},
+        allowing users to quckly preview datasets produced by their code while iterating on it on their local machine.
+    }
+    \textbf{[Java, Python, Gradle]}
+    \item {
+        As a part of a hackweek competition, implemented BE for a MVP version of
+        \href{https://www.palantir.com/docs/foundry/hyperauto/overview/}{Palantir HyperAuto},
+        a software-defined data integration (SDDI) tool for data systems like Salesforce and SAP,
+        providing users with end-to-end data integration capabilities out of the box.
+    }
+    \textbf{[Java, SAP]}
+    \item {
+        Drastrically improved performance of
+        \href{https://www.palantir.com/docs/foundry/data-lineage/overview/}{Data Lineage},
+        a tool that facilitates a holistic view of how data flows through the Foundry,
+        by decreasing P99 of BE endpoint powering it from ~30s to less than 1s.
+    }
+    \item {
+        Seamlessly migrated
+        \href{https://www.palantir.com/docs/foundry/data-integration/application-reference/#builds}{Job Tracker},
+        a tool allowing users to view
+        \href{https://www.palantir.com/docs/foundry/data-integration/builds/}{builds}
+        happening in Foundry, to a new ElastSearch index which improved its security and lowered costs.
+    }
+    \textbf{[Java, ElasticSearch]}
+    \item {
+        Delivered core BE functionality for
+        \href{https://www.palantir.com/docs/foundry/maintaining-pipelines/monitoring-views-intro/}{"Monitoring at scale"}
+        which is a highly scalable and low latency tool for monitoring resources in Foundry.
+    }
+    \textbf{[Java]}
+\end{itemize}
