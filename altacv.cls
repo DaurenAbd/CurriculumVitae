@@ -158,9 +158,10 @@
     \smallskip
     \normalsize{\color{emphasis}#4}}
   \hfill%
-  \parbox{0.254\textwidth}{
-    \hspace{0.2em}\raggedright\normalsize\faMapMarker\hspace{0.6em}South Korea, Ulsan
-    \newline
+  \parbox{0.25\textwidth}{
+    % \hspace{0.2em}\raggedright\normalsize\faMapMarker\hspace{0.6em}#5
+    % \newline
+    \hspace{0.3em}
     \raggedright\normalsize\faCalendar\hspace{0.5em}#3
   }
 }
