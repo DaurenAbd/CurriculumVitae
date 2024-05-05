@@ -26,80 +26,31 @@
 
 \begin{document}
 
-    \input{header}
+% --------------------- HEADER ---------------------
+\input{header}
 
-    \large
-    \cvsection{Experience}
+% --------------------- EXPERIENCE -----------------
+\large\cvsection{Experience}
 
-    \cveventflat
-    {Software Engineer at }
-    {\textbf{Palantir}, \textit{London, United Kingdom}}
-    {Sep. 2020}
-    {London, United Kingdom}
-    \newline
-    \href{https://www.palantir.com/}{\textbf{www.palantir.com}}
+\input{companies/palantir}
+\medskip
 
-    \medskip
+\input{companies/skelter}
+\medskip
 
-    \cveventflat
-    {Software Engineer at }
-    {\textbf{Skelter Labs}, \textit{Seoul, South Korea}}
-    {Mar. 2019 -- Aug. 2020}
-    {Seoul, South Korea}
-    \newline
-    \href{https://www.skelterlabs.com/}{\textbf{www.skelterlabs.com}}
-    \begin{itemize}
-        \item Dived into Deep Learning research and engineering project for the first time, and had major contribution in creating a top-notch Korean Machine Reading Comprehension (MRC) engine.
-        \item Achieved top ranking in \textit{Korean Question Answering Dataset (KorQuAD)} version 1 and 2
-        \href{https://korquad.github.io/}{\textbf{[www.korquad.github.io]}}
-        \item Introduced SpanBERT to the team. Implemented and optimized it to become the 1st rank in \textit{KorQuAD-v1} with F1 score of 95.15 as of Jan., 2020. Skelter Labs was the 1st rank for 6 months
-        \textbf{[Python, Tensorflow, GCP]}
-        \item Fine-tuned and optimized the engine to \textit{KorQuAD-v2}, which includes HTML tags with lists and tables, with significantly longer answer spans, achieving 88.09 F1 score to be ranked 1st on June, 2020
-        \textbf{[Python, Tensorflow, GCP]}
-        \item Created pretraining data generation pipeline for BERT-like models, enabling more frequent experiments with those models
-        \textbf{[Python, Spark, Kubernetes]}
-    \end{itemize}
+\input{companies/hennge}
+\medskip
 
-    \medskip
+\input{companies/finapps}
 
-    \cveventflat
-    {Software Engineer Intern at }
-    {\textbf{HENNGE}, \textit{Tokyo, Japan}}
-    {Jan. 2019 -- Mar. 2019}
-    {Tokyo, Japan}
-    \newline
-    \href{https://hennge.com/global/}{\textbf{www.hennge.com/global}}
-    \begin{itemize}
-        \item Introduced Prometheus for monitoring Amazon ECS clusters to alert DevOps team via Slack in case of emergency
-        \textbf{[IaC, AWS, Terraform, Docker, Prometheus, Alertmanager, PromQL]}
-% \item Underwent a 1-week DevOps training to implement and host a Twitter-clone on AWS using Infrastructure-as-Code
-%     \textbf{[IaC, AWS, Terraform, Docker]}
-    \end{itemize}
+% --------------------- EDUCATION ------------------
+\large\cvsection{Education}
 
-    \medskip
+\input{education}
 
-    \cveventflat
-    {Software Engineer at }
-    {\textbf{FinApps}, \textit{Almaty, Kazakhstan}}
-    {Aug. 2017 -- Feb. 2018}
-    {Almaty, Kazakhstan}
-    \newline
-    \href{https://torgai.com/}{\textbf{www.torgai.com}}
-    \begin{itemize}
-        \item Developed point-of-sale Android app to help local entrepreneurs digitize their businesses and achieved more than 100 customers by 2017
-        \textbf{[Kotlin, Java, SQL, Firebase, Espresso, Android]}
-        \item Optimized database full-text search from ~1 sec per query to less than 0.1 sec
-        \textbf{[SQL, SQLite, Android]}
-        \item Created face recognition system to bind customers to their checks as a part of customer loyalty program
-        \textbf{[Python, Java, JAX-RS, SQL]}
-    \end{itemize}
+% \input{projects}
+% \input{olympiads}
 
-    \input{education}
-
-    % \input{projects}
-
-    % \input{olympiads}
-
-    \clearpage
+\clearpage
 
 \end{document}
