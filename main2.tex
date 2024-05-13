@@ -18,6 +18,15 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage[a4paper,
+            left=0.80in,
+            right=0.85in,
+            top=1in,
+            bottom=1in,
+            footskip=0.25in]{geometry}
 \input{dependencies/glyphtounicode}
 
 
@@ -99,6 +108,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\definecolor{hrefBlue}{RGB}{0,32,96}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -112,27 +123,27 @@
 % \end{tabular*}
 
 \begin{center}
-\textbf{\Huge \scshape Name Surname} \\ \vspace{1pt}
-\small \textit{Automation QA Engineer} \\
-123-456-7890 $|$ \href{mailto:namesurname@gmail.com}{\underline{namesurname@gmail.com}} $|$
-\href{https://www.linkedin.com/in/namesurname/}{\underline{linkedin.com/in/namesurname/}} $|$
-\href{https://github.com/namesurname}{\underline{github.com/namesurname}}
+\textbf{\Huge \scshape Dauren Abdykaparov} \\ \vspace{1pt}
+\href{tel:447311229998}{+447311229998} $|$
+\href{mailto:daurenabd@gmail.com}{\underline{daurenabd@gmail.com}} $|$
+\href{https://www.linkedin.com/in/daurenabd/}{\underline{linkedin.com/in/daurenabd/}} $|$
+\href{https://github.com/daurenabd}{\underline{github.com/daurenabd}}
 \end{center}
 
 %-----------SUMMARY-----------
-\section*{Summary}
-Results-oriented and detail-driven Automation Quality Engineer with a strong background in Java programming and a passion for ensuring software reliability. Experienced in designing, implementing, and executing automated test scripts to verify the functionality and performance of software applications. Proven track record of collaborating with development teams to identify and resolve issues early in the development process. Adept at utilizing testing frameworks such as JUnit and incorporating continuous integration tools like Jenkins. Skilled in creating and maintaining automated test suites for web and mobile applications. Committed to delivering high-quality software by applying industry best practices in testing and automation. Seeking opportunities to contribute technical expertise and enhance software development processes as an Automation Quality Engineer.
+% \section*{Summary}
+% Results-oriented and detail-driven Automation Quality Engineer with a strong background in Java programming and a passion for ensuring software reliability. Experienced in designing, implementing, and executing automated test scripts to verify the functionality and performance of software applications. Proven track record of collaborating with development teams to identify and resolve issues early in the development process. Adept at utilizing testing frameworks such as JUnit and incorporating continuous integration tools like Jenkins. Skilled in creating and maintaining automated test suites for web and mobile applications. Committed to delivering high-quality software by applying industry best practices in testing and automation. Seeking opportunities to contribute technical expertise and enhance software development processes as an Automation Quality Engineer.
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Languages}{: Java, TypeScript, SQL} \\
-\textbf{Frameworks}{: Selenium/Selenide, Playwright, RestAssured, JUnit, TestNG, Cucumber} \\
-\textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Maven/Gradle, Grafana, Kibana, Splunk} \\
-\textbf{Libraries}{: WireMock, Spring Cloud Contract, Pact, Chaos Monkey}
-}}
-\end{itemize}
+% \section{Technical Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+% \small{\item{
+% \textbf{Languages}{: Java, TypeScript, SQL} \\
+% \textbf{Frameworks}{: Selenium/Selenide, Playwright, RestAssured, JUnit, TestNG, Cucumber} \\
+% \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Maven/Gradle, Grafana, Kibana, Splunk} \\
+% \textbf{Libraries}{: WireMock, Spring Cloud Contract, Pact, Chaos Monkey}
+% }}
+% \end{itemize}
 
 
 %-----------EXPERIENCE-----------
@@ -151,33 +162,124 @@ Results-oriented and detail-driven Automation Quality Engineer with a strong bac
 %-------------------------------------------
 
 \resumeSubheading
-{Lead Automation QA Engineer}{Apr. 2020 -- Feb. 2021}
-{Somename-bank - it's a big bank with web, API and mobile applications.}{City, Country}
+{Palantir Technologies}{Sep. 2020 -- now}
+{Backend Software Engineer working on Foundry, a data management platform.}{London, United Kingdom}
 \resumeItemListStart
-\resumeItem{Created common testing framework (Java, Cucumber, RestAsssured, for component testing in 5+ teams}
-\resumeItem{Covered 100\% manual scenarios with automation (Java, Selenide, Cucumber, RestAssured) that decreased regression time from 5 days to 2 days}
-\resumeItem{Integrated automation jobs into Jenkins and maintained test automation logs, reporting and verifying
-bug resolutions}
-\resumeItem{Successfully implemented new processes across 8 teams: created test quality metrics, training
-materials, organized onboarding, improving work processes for production defects}
-\resumeItem{Contributed to candidate interviews and mentored QA engineers, providing guidance and assigning
-tasks}
-\resumeItem{Awarded as "Engineer of the Year - QA", "Delivery team of the Year"}
+\resumeItem{
+Introduced
+\href{https://www.palantir.com/docs/foundry/administration/container-governance/}
+{\textcolor{hrefBlue}{automatic vulnerability scanning and security controls}}
+for user-uploaded Docker containers in Foundry, allowing users to recall them based on found exposures.
+This green-lighted
+\href{https://www.palantir.com/docs/foundry/transforms-python/container-overview/}
+{\textcolor{hrefBlue}{a workflow}},
+allowing users to use Docker containers as a part of their data pipeline.
+\textbf{[Java, Docker, Trivy]}
+}
+\resumeItem {
+Implemented
+\href{https://www.palantir.com/docs/foundry/code-repositories/aip-features/\#code-autocomplete}
+{\textcolor{hrefBlue}{a tool similar to GitHub Copilot}},
+which provides users with LLM-generated code completions for Foundry-specific code, resulting in
+\textasciitilde50\% reduction in lead time to production.
+}
+\resumeItem {
+Created
+\href{https://www.palantir.com/docs/foundry/transforms-common/local-preview/}
+{\textcolor{hrefBlue}{a Gradle plugin}},
+allowing power users to quickly preview Foundry datasets produced by their Spark code in IDEs of their
+choice, which greatly increased their iteration speed as this feature was previously available only in-browser.
+\textbf{[Java, Python, Gradle]}
+}
+\resumeItem {
+Achieved 30x performance boost for
+\href{https://www.palantir.com/docs/foundry/data-lineage/overview/}
+{\textcolor{hrefBlue}{Data Lineage}},
+a tool that facilitates a holistic view of how data flows through the Foundry,
+by decreasing P99 of a BE endpoint powering it from ~30s to less than 1s.
+}
+\resumeItem {
+Seamlessly migrated
+\href{https://www.palantir.com/docs/foundry/data-integration/application-reference/\#builds}
+{\textcolor{hrefBlue}{Job Tracker}},
+a tool allowing users to view
+\href{https://www.palantir.com/docs/foundry/data-integration/builds/}
+{\textcolor{hrefBlue}{builds}}
+happening in Foundry, to a new ElasticSearch index which improved its security and lowered costs.
+\textbf{[Java, ElasticSearch]}
+}
+\resumeItem {
+Delivered core BE functionality for
+\href{https://www.palantir.com/docs/foundry/maintaining-pipelines/monitoring-views-intro/}
+{\textcolor{hrefBlue}{Monitoring at scale}},
+a highly scalable and low latency tool for monitoring resources in Foundry.
+It replaced multiple pre-existing ad-hoc tools and allowed monitoring of entire data pipelines in a set-and-forget way.
+\textbf{[Java]}
+}
+\resumeItem {
+As a part of a hack-week competition, implemented BE for a MVP version of
+\href{https://www.palantir.com/docs/foundry/hyperauto/overview/}
+{\textcolor{hrefBlue}{Palantir HyperAuto}},
+a software-defined data integration (SDDI) tool for data systems like Salesforce and SAP.
+This allowed users to create end-to-end data pipelines based on thousands of datasets
+in just a few clicks, a process that would otherwise take days of manual work.
+\textbf{[Java, SAP]}
+}
+\resumeItem {
+Contributed to
+\href{https://www.palantir.com/docs/foundry/code-repositories/aip-features/\#ai-error-enhancer}
+{\textcolor{hrefBlue}{AI Error Enhancer}},
+a tool that provides comprehensive error explanations and suggested code changes in multiple apps across Foundry.
+This helped to reduce the number of customer-filed support tickets.
+\textbf{(pending patent)}
+}
+\resumeItem {
+Wrote
+\href{https://www.palantir.com/docs/foundry/}
+{\textcolor{hrefBlue}{Palantir's public docs}}
+for most of the features mentioned in this document.
+}
 \resumeItemListEnd
 
 \resumeSubheading
-{Senior Quality Assurance Engineer}{Jul 2017 - Feb 2018}
-{Experio, OpenBank}{City, Country}
+{Skelter Labs}{Mar. 2019 -- Aug. 2020}
+{Software Engineer in a conversational AI startup with \$30mil total investment}{Seoul, South Korea}
 \resumeItemListStart
-\resumeItem{Manual testing for a big bank. Worked with CFT, MS Dynamics CRM, 3Card-R, OpenWay Way4.}
+
+\resumeItem {
+Achieved \#1 rank in \textit{Korean Question Answering Dataset (KorQuAD)}
+with F\textsubscript{1} of 95.15 as of Jan 2020,
+\newline
+and \#1 rank in KorQuAD-v2 (similar to v1, but with longer context) with F\textsubscript{1} of 88.09 as of Jun 2020.
+\href{https://korquad.github.io/}{\textbf{[www.korquad.github.io]}}
+\textbf{[Python, Tensorflow, GCP]}
+}
+\resumeItem {
+Created highly scalable training data pipeline for LLM models, unlocking more frequent experiments.
+\textbf{[Python, Spark, Kubernetes]}
+}
+
 \resumeItemListEnd
 
 \resumeSubheading
-{QA Engineer}{Feb 2014 - Jul 2017}
-{LANIT BPM}{City, Country}
+{HENNGE}{Jan. 2019 -- Mar. 2019}
+{Software Engineer Intern in a cloud-based security provider with \$225mil market cap}{Tokyo, Japan}
 \resumeItemListStart
-\resumeItem{Project with medical desktop application, where I participated as a manual QA Engineer and mentored
-3 juniors.}
+\resumeItem {
+Introduced Prometheus, a time-series based alerting software, to monitor healthiness of AWS ECS clusters and integrated it with Slack,
+resulting in \textbf{10x} mean-time-to-acknowledge improvement from 10min to under 1min.
+\textbf{[Terraform, PromQL, AWS]}
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{FinApps}{Jan. 2019 -- Mar. 2019}
+{Software Engineer working on Torgai, a point-of-sale app for Android}{Almaty, Kazakhstan}
+\resumeItemListStart
+\resumeItem {
+Developed PoS Android app for local shops with \textgreater100 customers as of Dec 2017.
+\textbf{[Kotlin, Java, SQL]}
+}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -208,19 +310,50 @@ tasks}
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Name State Technical University}{City, Country}
-{Engineer's Degree, Faculty of Electronics and Instrument Making}{2007 - 2012}
+{Ulsan National Institute of Science and Technology (UNIST)}{Ulsan, South Korea}
+{B.S. in Physics and Computer Science}{Sept. 2014 - Aug. 2019}
+\resumeItemListStart
+\resumeItem{Graduated top-5 university in South Korea with \textbf{cum laude} honors}
+\resumeItem{Received UNIST Global Dream Scholarship: free tuition + \$300 monthly allowance}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------Certifications-----------
-\section{Certifications}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Cloud Digital Leader - Google Cloud} \\
-\textit{Issued Sep 2022 - Expires Sep 2025} \\
-}}
-\end{itemize}
+%-----------Achievements-----------
+\section{Achievements}
+\parbox[t]{0.45\textwidth}{
+    \begin{itemize}[leftmargin=0.15in, label={}]
 
+    \vspace{-12pt}
+    \small{\item{
+    \textbf{Asia-Pacific Informatics Olympiad} \\
+    \textit{2014 (\textbf{bronze}), 2013 (participant)} \\
+    }}
+
+    \vspace{-15pt}
+    \small{\item{
+    \textbf{Eurasian Informatics Olympiad} \\
+    \textit{2013 (\textbf{silver}), 2011 (\textbf{bronze})} \\
+    }}
+
+    \end{itemize}
+}
+\parbox[t]{0.45\textwidth}{
+    \begin{itemize}[leftmargin=0.15in, label={}]
+
+        \vspace{-12pt}
+        \small{\item{
+        \textbf{All-Russian Team Olympiad in Informatics} \\
+        \textit{2013 (\textbf{bronze}), 2011 (participant)} \\
+        }}
+
+        \vspace{-15pt}
+        \small{\item{
+        \textbf{Kazakhstan IOI reserves member} \\
+        \textit{2012 - 2014} \\
+        }}
+
+    \end{itemize}
+}
 
 %-------------------------------------------
 \end{document}
