@@ -65,8 +65,8 @@ Non Standard LaTeX document class]
 \DeclareOption{notitlepage}{\@titlepagefalse}
 \DeclareOption{onecolumn}{\@twocolumnfalse}
 \DeclareOption{twocolumn}{\@twocolumntrue}
-\DeclareOption{leqno}{\input{leqno.clo}}
-\DeclareOption{fleqn}{\input{fleqn.clo}}
+\DeclareOption{leqno}{\input{dependencies/leqno}}
+\DeclareOption{fleqn}{\input{dependencies/fleqn}}
 \DeclareOption{openbib}{%
     \AtEndOfPackage{%
         \renewcommand\@openbib@code{%

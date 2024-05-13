@@ -24,7 +24,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 \ProcessOptions\relax
 
-\LoadClass{extarticle}
+\LoadClass{dependencies/extarticle}
 
 \RequirePackage[margin=2cm]{geometry}
 \RequirePackage{fontawesome}
