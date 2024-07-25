@@ -22,7 +22,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{xcolor}
 \usepackage[a4paper,
-            left=0.80in,
+            left=0.85in,
             right=0.85in,
             top=0.8in,
             bottom=0.8in,
@@ -174,7 +174,7 @@ This initiative enabled secure,
 \href{https://www.palantir.com/docs/foundry/transforms-python/container-overview/}
 {\textcolor{hrefBlue}{user-driven container deployment}},
 reducing the time from upload to execution
-\textbf{from several days to less than 10 minutes}
+\textbf{from several days to less than 15 minutes}
 and removing the need for coordination from Palantir employees.
 [Java, Docker, Trivy]
 }
@@ -184,7 +184,6 @@ Developed
 {\textcolor{hrefBlue}{a tool similar to GitHub Copilot}},
 offering users LLM-generated code completions with support for Foundry-specific code,
 resulting in \textbf{50\% reduction} in lead time to production.
-[LLM]
 }
 \resumeItem {
 Created
@@ -196,44 +195,46 @@ without leaving their IDE. This significantly accelerated the development cycle 
 [Python, Gradle]
 }
 \resumeItem {
-Achieved 30x performance boost for
+Achieved \textbf{30x} performance boost for
 \href{https://www.palantir.com/docs/foundry/data-lineage/overview/}
 {\textcolor{hrefBlue}{Data Lineage}},
-a tool that facilitates a holistic view of how data flows through the Foundry,
-by decreasing P99 of a BE endpoint powering it from ~30s to less than 1s.
+one of the most used tools in Foundry that shows a graph of how data flows through the platform,
+by decreasing P99 of an endpoint powering it from \textbf{~30s to less than 1s}.
 }
 \resumeItem {
-Automated ElasticSearch (ES) index migrations for
+Automated ElasticSearch (full-text search engine) index migrations for
 \href{https://www.palantir.com/docs/foundry/data-integration/application-reference/\#builds}
 {\textcolor{hrefBlue}{Job Tracker}},
 a tool offering users an overview of code executions run in Foundry.
-This unlocked more frequent ES upgrades and \textbf{saved \$250,000 per year} in storage spending alone.
-[ElasticSearch]
+This unlocked more frequent ES upgrades, \textbf{saved \$250,000 per year} in storage spending alone,
+and reduced engineering time required for maintenance of the service down to zero.
 }
 \resumeItem {
-Delivered core BE functionality for
+Delivered core backend functionality for
 \href{https://www.palantir.com/docs/foundry/maintaining-pipelines/monitoring-views-intro/}
 {\textcolor{hrefBlue}{Monitoring at scale}},
-a highly scalable and low latency tool for monitoring resources in Foundry.
-It replaced multiple pre-existing ad-hoc tools and allowed monitoring of entire data pipelines in a set-and-forget way.
-\textbf{[Java]}
+a highly scalable data pipeline monitoring tool that replaced multiple ad-hoc solutions.
+It allowed users to set up monitoring for entire data pipelines with just a few clicks,
+\textbf{saving hours of engineering time} per customer per day,
+improving efficiency \& reliability, and minimizing chances of misconfiguration.
+[Java]
 }
 \resumeItem {
-As a part of a hack-week competition, implemented BE for a MVP version of
+As a part of a hack-week competition, implemented backend for an MVP version of
 \href{https://www.palantir.com/docs/foundry/hyperauto/overview/}
 {\textcolor{hrefBlue}{Palantir HyperAuto}},
-a software-defined data integration (SDDI) tool for data systems like Salesforce and SAP.
+a software-defined data integration (SDDI) tool for data systems like Salesforce and SAP\@.
 This allowed users to create end-to-end data pipelines based on thousands of datasets
-in just a few clicks, a process that would otherwise take days of manual work.
-\textbf{[Java, SAP]}
+in \textbf{less than 5 minutes}, making a process that would otherwise take days of manual work
+more than \textbf{100x faster}.
+[Java, SAP]
 }
 \resumeItem {
-Contributed to
+Co-authored
 \href{https://www.palantir.com/docs/foundry/code-repositories/aip-features/\#ai-error-enhancer}
 {\textcolor{hrefBlue}{AI Error Enhancer}},
-a tool that provides comprehensive error explanations and suggested code changes in multiple apps across Foundry.
-This helped to reduce the number of customer-filed support tickets.
-\textbf{(pending patent)}
+a \textbf{patented} tool that provides comprehensive error explanations and suggested code changes across Foundry.
+This reduced the number of customer-filed support tickets by \textbf{18\%}.
 }
 \resumeItem {
 Wrote
@@ -250,14 +251,14 @@ for most of the features mentioned in this document.
 
 \resumeItem {
 Achieved \textbf{\#1 rank} in \textit{Korean Question Answering Dataset (KorQuAD)}
-with F\textsubscript{1} (standard measure of predictive performance) of \textbf{95.15\%} as of Jan 2020,
-and \textbf{\#1 rank} in KorQuAD-v2 (similar to v1, but with longer context) with F\textsubscript{1} of
+with F\textsubscript{1} (standard measure of predictive performance) of \textbf{95.15\%} as of Jan 2020
+and in KorQuAD-v2 (similar to v1, but with significantly longer context) with F\textsubscript{1} of
 \textbf{88.09\%} as of Jun 2020.
 [Python, Tensorflow, GCP]
 }
 \resumeItem {
 Created highly scalable training data pipeline for LLM models, unlocking more frequent experiments.
-\textbf{[Python, Spark, Kubernetes]}
+\newline[Python, Spark, Kubernetes]
 }
 
 \resumeItemListEnd
@@ -267,9 +268,9 @@ Created highly scalable training data pipeline for LLM models, unlocking more fr
 {Software Engineer Intern in a cloud-based security provider with \$225mil market cap}{Tokyo, Japan}
 \resumeItemListStart
 \resumeItem {
-Introduced Prometheus, a time-series based alerting software, to monitor healthiness of AWS ECS clusters and integrated it with Slack,
-resulting in \textbf{10x} mean-time-to-acknowledge improvement from 10min to under 1min.
-\textbf{[Terraform, PromQL, AWS]}
+Set up Prometheus, a time-series based monitoring system, for AWS ECS clusters and integrated it with Slack,
+achieving \textbf{5x} mean-time-to-acknowledge reduction down to under 3min.
+[Terraform, Prometheus, PromQL, AWS]
 }
 \resumeItemListEnd
 
@@ -279,7 +280,7 @@ resulting in \textbf{10x} mean-time-to-acknowledge improvement from 10min to und
 \resumeItemListStart
 \resumeItem {
 Developed PoS Android app for local shops with \textgreater100 customers as of Dec 2017.
-\textbf{[Kotlin, Java, SQL]}
+[Kotlin, Java, SQL]
 }
 \resumeItemListEnd
 
@@ -306,6 +307,15 @@ Developed PoS Android app for local shops with \textgreater100 customers as of D
 %            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
 %          \resumeItemListEnd
 %    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\hspace*{7pt}
+\small{\textbf{Technical skills:} Java, Python, C++, SQL, ElasticSearch, CassandraDB, Spark, CI/CD, distributed systems}
+\newline
+\hspace*{8pt}
+\small{\textbf{Soft skills:} effective communication, critical thinking, problem solving, attention to details, collaboration, autonomy}
 
 %-----------EDUCATION-----------
 \section{Education}
