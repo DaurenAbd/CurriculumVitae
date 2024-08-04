@@ -78,11 +78,12 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \vspace{-5pt}\item
+    \begin{tabularx}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}, #4 & #2 \\
+    \end{tabularx}
+    \textit{\small#3} \\
+    \vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -163,7 +164,7 @@
 
 \resumeSubheading
 {Palantir Technologies}{Sep. 2020 -- now}
-{Backend Software Engineer working on Foundry, a data management platform.}{London, United Kingdom}
+{Backend Software Engineer working on Foundry, a data management platform and one of Palantir's main products}{London, United Kingdom}
 \resumeItemListStart
 \resumeItem{
 Led the design and implementation of
@@ -189,24 +190,24 @@ resulting in \textbf{50\% reduction} in lead time to production.
 Created
 \href{https://www.palantir.com/docs/foundry/transforms-common/local-preview/}
 {\textcolor{hrefBlue}{a Gradle plugin}},
-allowing users to quickly preview the output by their Spark code on a subset of their input data
-without leaving their IDE. This significantly accelerated the development cycle saving
-\textbf{more than a minute} per preview, making it on average \textbf{30\% faster}.
+allowing users to quickly preview the output of their Spark code on their data from their IDE\@.
+This made the whole development cycle \textbf{30\% faster}
+saving more than \textbf{1min per preview}.
 [Python, Gradle]
 }
 \resumeItem {
-Achieved \textbf{30x} performance boost for
+Achieved \textbf{24x} performance boost for
 \href{https://www.palantir.com/docs/foundry/data-lineage/overview/}
 {\textcolor{hrefBlue}{Data Lineage}},
 one of the most used tools in Foundry that shows a graph of how data flows through the platform,
-by decreasing P99 of an endpoint powering it from \textbf{~30s to less than 1s}.
+by decreasing 95th percentile of the duration of an endpoint powering it from \textbf{~2min to less than 5s}.
 }
 \resumeItem {
-Automated ElasticSearch (full-text search engine) index migrations for
+Automated ElasticSearch (a full-text search engine) index migrations for
 \href{https://www.palantir.com/docs/foundry/data-integration/application-reference/\#builds}
 {\textcolor{hrefBlue}{Job Tracker}},
-a tool offering users an overview of code executions run in Foundry.
-This unlocked more frequent ES upgrades, \textbf{saved \$250,000 per year} in storage spending alone,
+a tool offering users an overview of code running in Foundry.
+This unlocked more frequent ElasticSearch upgrades, \textbf{saved \$250,000 a year} in storage spending alone,
 and reduced engineering time required for maintenance of the service down to zero.
 }
 \resumeItem {
@@ -250,9 +251,14 @@ for most of the features mentioned in this document.
 \resumeItemListStart
 
 \resumeItem {
-Achieved \textbf{\#1 rank} in \textit{Korean Question Answering Dataset (KorQuAD)}
+Achieved \textbf{\#1 rank} in
+\href{https://korquad.github.io/category/1.0_ENG.html}
+{\textcolor{hrefBlue}{Korean Question Answering Dataset (KorQuAD)}}
 with F\textsubscript{1} (standard measure of predictive performance) of \textbf{95.15\%} as of Jan 2020
-and in KorQuAD-v2 (similar to v1, but with significantly longer context) with F\textsubscript{1} of
+and in
+\href{https://korquad.github.io/}
+{\textcolor{hrefBlue}{KorQuAD-v2}}
+(similar to v1, but with significantly longer context) with F\textsubscript{1} of
 \textbf{88.09\%} as of Jun 2020.
 [Python, Tensorflow, GCP]
 }
@@ -260,7 +266,12 @@ and in KorQuAD-v2 (similar to v1, but with significantly longer context) with F\
 Created highly scalable training data pipeline for LLM models, unlocking more frequent experiments.
 \newline[Python, Spark, Kubernetes]
 }
-
+\resumeItem {
+This work was used to power a new product,
+\href{https://www.skelterlabs.com/product-aiq-answer}
+{\textcolor{hrefBlue}{AIQ\textsuperscript{+} Answer}},
+a Q\&A bot that can analyze both text and video.
+}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -283,7 +294,7 @@ Developed PoS Android app for local shops with \textgreater100 customers as of D
 [Kotlin, Java, SQL]
 }
 \resumeItemListEnd
-
+\vspace{-5pt}
 \resumeSubHeadingListEnd
 
 
@@ -312,21 +323,20 @@ Developed PoS Android app for local shops with \textgreater100 customers as of D
 \section{Skills}
 
 \hspace*{7pt}
-\small{\textbf{Technical skills:} Java, Python, C++, SQL, ElasticSearch, CassandraDB, Spark, CI/CD, distributed systems}
-\newline
-\hspace*{8pt}
-\small{\textbf{Soft skills:} effective communication, critical thinking, problem solving, attention to details, collaboration, autonomy}
+\small{\textbf{Technical skills:} Java, Python, C++, SQL, ElasticSearch, CassandraDB, Spark, Docker, CI/CD, distributed systems}
+\vspace{-6pt}
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Ulsan National Institute of Science and Technology (UNIST)}{Ulsan, South Korea}
-{B.S. in Physics and Computer Science}{Sept. 2014 - Aug. 2019}
+{Ulsan National Institute of Science and Technology (UNIST)}{Sept. 2014 - Aug. 2019}
+{B.S. in Physics and Computer Science}{Ulsan, South Korea}
 \resumeItemListStart
 \resumeItem{Graduated \textbf{top-5} university in South Korea with \textbf{cum laude honors}}
-\resumeItem{Received UNIST Global Dream Scholarship: \textbf{free tuition} + \textbf{\$300 per month} allowance}
+\resumeItem{Received a merit-based Global Dream Scholarship with less than \textbf{7\% acceptance rate}}
 \resumeItemListEnd
+\vspace{-6pt}
 \resumeSubHeadingListEnd
 
 %-----------Achievements-----------
@@ -335,6 +345,12 @@ Developed PoS Android app for local shops with \textgreater100 customers as of D
     \begin{itemize}[leftmargin=0.15in, label={}]
 
     \vspace{-12pt}
+    \small{\item{
+    \textbf{Patent patent patent} \\
+    \textit{2024} \\
+    }}
+
+    \vspace{-15pt}
     \small{\item{
     \textbf{Asia-Pacific Informatics Olympiad} \\
     \textit{2014 (\textbf{bronze}), 2013 (participant)} \\
